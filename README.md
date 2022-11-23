@@ -22,7 +22,7 @@ This files contain data for insertion into our database through MySQL.
 
 ### SquirrelAPI folder
 
-It contains instructions for installations and setting up your local development environment along with the sample .json package files and the main program for our API.
+It contains instructions for installations and setting up your local development environment along with the sample .json package files, the makefile, and, the main program for our API.
 
 ### Quiz 4 folder
 
