@@ -17,7 +17,7 @@ INSERT INTO  area_sighted  VALUES ('OC', 'Off Campus');
 -- total_seen refers to amount of squirrels that were sighted in that particular report
 
 CREATE TABLE  sight_report  (
-    report_id  SMALLINT AUTO_INCREMENT,
+    report_id  SMALLINT,
     area_id VARCHAR(2) NOT NULL,
     time_sighted  DATETIME NOT NULL,
     PRIMARY KEY (report_id),
