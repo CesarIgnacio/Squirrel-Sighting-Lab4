@@ -28,7 +28,7 @@ It contains instructions for installations and setting up your local development
 
 Contains data that we used for our first database report.
 
-### Additional information on installations.
+### Makefile and additional information on installations.
 
 Since we are using Express.js for our API endpoints creation, to be able to use some of the files in this repository, the user needs to install the following items:
 
