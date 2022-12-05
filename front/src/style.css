@@ -52,3 +52,10 @@ a:visited {
 .pages{
   font-weight: bold;
 }
+table{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size:32px;
+  color: black;
+}
