@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./src/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="mainnav" id="navbar">
+        <ul class="navlist">
+          <li><a class="navlink" href="./index.html">Home</a></li>
+          <li><a class="navlink" href="./loc.html">Location</a></li>
+          <li><a class="navlink" href="./desc.html">Description</a></li>
+          <li><a class="navlink" href="./time.html">TimeAndPlace</a></li>
+          <li><a class="navlink navbtn" href="./del.html">Delete</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Welcome Record Your Sighting Below</h1>
+    <div class="form">
+      <label for="report">Report ID</label>
+      <input type="text" id="report" name="report" />
+
+      <label for="area">Area ID</label>
+      <input type="text" name="area" id="area" />
+
+      <label for="time">Time</label>
+      <input type="text" name="time" id="time" />
+
+      <label for="building">Building Name</label>
+      <input type="text" name="building" id="building" />
+
+      <label for="total">Total Seen</label>
+      <input type="text" name="total" id="total" />
+
+      <label for="descript">Description</label>
+      <input type="text" name="descript" id="desc" />
+
+      <label for="action">Action</label>
+      <input type="text" name="action" id="act" />
+
+      <button id="post" onclick="submitSight()">Submit</button>
+    </div>
+  </body>
+</html>

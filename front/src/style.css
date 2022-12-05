@@ -1,0 +1,38 @@
+body {
+  background-color: aliceblue;
+}
+
+h1 {
+  color: black;
+}
+
+div {
+  width: 50%;
+}
+
+button {
+  margin-top: 20px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#get {
+  margin-top: 5px;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-left: 10px;
+}

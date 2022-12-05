@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locations</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./src/loc.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="mainnav" id="navbar">
+        <ul class="navlist">
+          <li><a class="navlink" href="./index.html">Home</a></li>
+          <li><a class="navlink" href="./loc.html">Location</a></li>
+          <li><a class="navlink" href="./desc.html">Description</a></li>
+          <li><a class="navlink" href="./time.html">TimeAndPlace</a></li>
+          <li><a class="navlink navbtn" href="./del.html">Delete</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Location Table</h1>
+    <div>
+      <p>If you wish to update a record enter the ReportID below and edit</p>
+      <label for="rep">ReportID</label>
+      <input type="text" name="rep" id="rep" oninput="getLocid()" />
+      <label for="bud">Building</label>
+      <input type="text" name="bud" id="bud" />
+      <button onclick="uptLoc()">Update</button>
+    </div>
+    <div id="tll">
+      <p>If you wish to see full table click button below</p>
+      <button onclick="getLocation()" id="get">GetTable</button>
+      <table id="tabel"></table>
+    </div>
+  </body>
+</html>

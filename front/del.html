@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./src/del.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="mainnav" id="navbar">
+        <ul class="navlist">
+          <li><a class="navlink" href="./index.html">Home</a></li>
+          <li><a class="navlink" href="./loc.html">Location</a></li>
+          <li><a class="navlink" href="./desc.html">Description</a></li>
+          <li><a class="navlink" href="./time.html">TimeAndPlace</a></li>
+          <li><a class="navlink navbtn" href="./del.html">Delete</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Delete</h1>
+    <div id="del">
+      <label for="delt">ReportID</label>
+      <input
+        type="text"
+        name="delt"
+        id="det"
+        onchange="getDelete()"
+        placeholder="Enter Password First to Display Remove Button"
+      />
+      <button id="delete" style="display: none" onclick="deleteId()">
+        Remove
+      </button>
+      <p id="para" style="display: none">
+        Now remove password and enter ReportID you want to remove if you wish to
+        delete all leave blank
+      </p>
+    </div>
+  </body>
+</html>
