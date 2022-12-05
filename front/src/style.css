@@ -37,11 +37,13 @@ select {
   gap: 1.6rem;
   padding-left: 10px;
 }
-a:link, a:hover a:active{
-  color:white;
+
+a:link,
+a:hover a:active {
+  color: white;
 }
-a:visited{
-  color:orange;
+a:visited {
+  color: orange;
 }
 .form{
   font-weight: bold;
