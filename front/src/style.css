@@ -1,5 +1,6 @@
 body {
-  background-color: aliceblue;
+  /**background-color: aliceblue;**/
+  background-image: url(https://uhdwallpapers.org/uploads/converted/18/03/15/squirrel-1920x1080_94688-mm-90.jpg);
 }
 
 h1 {
@@ -35,4 +36,10 @@ select {
   align-items: center;
   gap: 1.6rem;
   padding-left: 10px;
+}
+a:link, a:hover a:active{
+  color:white;
+}
+a:visited{
+  color:orange;
 }
