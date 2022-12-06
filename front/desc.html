@@ -26,13 +26,13 @@
     <div class="pages">
       <p>If you wish to update a record enter the ReportID below and edit</p>
       <label for="id">RepID</label>
-      <input type="text" name="id" id="rep" oninput="getDescid()" />
+      <input type="number" min="1" name="id" id="rep" oninput="getDescid()" placeholder="ex. 5"/>
       <label for="seen">Total Seen</label>
-      <input type="text" name="seen" id="seen" />
+      <input type="number" min="1" name="seen" id="seen" placeholder="ex. 1"/>
       <label for="phys">Physical Description</label>
-      <input type="text" name="phys" id="phys" />
+      <input type="text" name="phys" id="phys" placeholder="ex. Small and gray"/>
       <label for="acts">Action</label>
-      <input type="text" name="acts" id="acts" required="required" />
+      <input type="text" name="acts" id="acts" required="required" placeholder="ex. Roaming around"/>
       <button onclick="uptDesc()">Update</button>
     </div>
     <div id="tll">

@@ -30,10 +30,10 @@
     <h1>Location Table</h1>
     <div class = "pages">
       <p>If you wish to update a record enter the ReportID below and edit</p>
-      <label for="rep">ReportID</label>
-      <input type="text" name="rep" id="rep" oninput="getLocid()" />
-      <label for="bud">Building</label>
-      <input type="text" name="bud" id="bud" />
+      <label for="rep">ReportID</label><br>
+      <input type="number" min="1" name="rep" id="rep" oninput="getLocid()" placeholder="ex. 5" /><br><br>
+      <label for="bud">Building Name</label>
+      <input type="text" name="bud" id="bud" placeholder="ex. James Hall" />
       <button onclick="uptLoc()">Update</button>
     </div>
     <div class = "table" id="tll">

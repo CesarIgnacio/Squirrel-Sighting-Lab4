@@ -24,25 +24,23 @@
     <h1>Welcome Record Your Sighting Below</h1>
     <div class="form">
       <label for="report">Report ID</label>
-      <input type="text" id="report" name="report" />
+      <input type="number" id="report" name="report" placeholder="ex. 5" />
 
       <label for="area">Area ID</label>
       <!-- <input type="text" name="area" id="area" /> -->
-      <select id="area" name="area">
-        <option value=""></option>
+      <select id="area" name="area" placeholder="ex. EQ">
+        <option value="" disabled selected>Select Option</option>
         <option value="EQ">EQ</option>
         <option value="WQ">WQ</option>
         <option value="OC">OC</option>
       </select>
       
-      <br><br>
       <label for="time">Time</label>
       <input type="datetime-local" name="time" id="time" />
-      <br><br>
 
       <label for="building">Building Name</label>
-      <select id="building" name="building">
-        <option value=""></option>
+      <select id="building" name="building" placeholder="ex. James Hall">
+        <option value="" disabled selected>Select Option</option>
         <option value="James Hall">James Hall</option>
         <option value="Roosevelt Hall">Roosevelt Hall</option>
         <option value="West Quad Building">West Quad Building</option>
@@ -58,13 +56,13 @@
       </select>
 
       <label for="total">Total Seen</label>
-      <input type="text" name="total" id="total" />
+      <input type="number" min="1" name="total" id="total" placeholder="ex. 1"/>
 
       <label for="descript">Description</label>
-      <input type="text" name="descript" id="desc" />
+      <input type="text" name="descript" id="desc" placeholder="ex. Small and gray"/>
 
       <label for="action">Action</label>
-      <input type="text" name="action" id="act" />
+      <input type="text" name="action" id="act" placeholder="ex. Roaming around"/>
 
       <button id="post" onclick="submitSight()">Submit</button>
     </div>
