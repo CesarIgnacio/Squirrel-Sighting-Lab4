@@ -9,7 +9,7 @@ h1 {
 
 div {
   width: 20%;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 
 button {
@@ -46,16 +46,27 @@ a:hover a:active {
 a:visited {
   color: orange;
 }
-.form{
+.form {
   font-weight: bold;
 }
-.pages{
+.pages {
   font-weight: bold;
+  position: relative;
 }
-table{
+table {
   position: absolute;
-  right: 0;
-  top: 0;
-  font-size:32px;
+  right: 150px;
+  top: 90px;
+  font-size: 32px;
   color: black;
+}
+
+p {
+  font-weight: bold;
+}
+
+table,
+th,
+td {
+  border: 4px solid;
 }
