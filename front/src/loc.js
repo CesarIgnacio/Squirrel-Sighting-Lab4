@@ -1,6 +1,7 @@
 const getLocation = () => {
   axios.get("http://localhost:3000/locations").then((response) => {
     show(response.data);
+    tab();
   });
 };
 
@@ -48,3 +49,15 @@ const uptLoc = () => {
   document.getElementById("bud").value = "";
   document.getElementById("rep").value = "";
 };
+
+function tab() {
+  const style = document.createElement("style");
+  style.innerHTML = `
+  table,
+  th,
+  td {
+    border: 2px solid;
+  }
+      `;
+  document.head.appendChild(style);
+}

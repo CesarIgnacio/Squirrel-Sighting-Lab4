@@ -1,7 +1,7 @@
 const getTime = () => {
   axios.get("http://localhost:3000/timeandplace").then((response) => {
     showTime(response.data);
-    console.log(response.data);
+    tab();
   });
 };
 
@@ -56,3 +56,15 @@ const uptTime = () => {
   document.getElementById("area").value = "";
   document.getElementById("rep").value = "";
 };
+
+function tab() {
+  const style = document.createElement("style");
+  style.innerHTML = `
+  table,
+  th,
+  td {
+    border: 2px solid;
+  }
+      `;
+  document.head.appendChild(style);
+}

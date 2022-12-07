@@ -1,6 +1,7 @@
 const getDesc = () => {
   axios.get("http://localhost:3000/description").then((response) => {
     showDes(response.data);
+    tab();
   });
 };
 
@@ -57,4 +58,16 @@ function showDes(data) {
     </tr>`;
   });
   document.getElementById("deco").innerHTML = tab;
+}
+
+function tab() {
+  const style = document.createElement("style");
+  style.innerHTML = `
+  table,
+  th,
+  td {
+    border: 2px solid;
+  }
+      `;
+  document.head.appendChild(style);
 }
